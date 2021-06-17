@@ -1,0 +1,40 @@
+.FirstBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.FirstBlockName img {
+    margin: 120px 0;
+}
+
+.FirstBlockHeader {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.FirstBlockSubTitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 0;
+    color: #27262D;
+    text-transform: uppercase;
+    margin-right: 10px;
+    transition: 400ms;
+}
+
+
+.FirstBlockHeader:hover .FirstBlockSubTitle {
+    margin-right: 30px;
+}
+
+
+
+.FirstBlockGeneral {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}

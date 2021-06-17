@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .contentWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.fixedMenu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #ffffff;
+}
+
+.header img {
+    width: 40px;
+    height: 40px;
+}
+.menu a {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    transition: 400ms;
+    color: #27262D;
+    margin-right: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: #553edb;
+}
+
+.menu a:last-child {
+    margin-right: 0;
+}

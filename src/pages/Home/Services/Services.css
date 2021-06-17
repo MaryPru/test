@@ -1,0 +1,61 @@
+.Services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.ServicesTitle {
+    font-family: TT Commons;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 120%;
+    color: #27262D;
+    margin-top: 200px;
+}
+
+.ServicesDescription {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #27262D;
+    padding: 90px 0 90px 720px;
+    height: auto;
+    max-width: 680px;
+}
+
+.ServicesDirection {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #27262D;
+    padding: 40px 0;
+    cursor: pointer;
+}
+
+
+.ServicesDirection:hover img{
+    margin-left: 46px;
+}
+
+
+
+.ServicesDirection .name {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #27262D;
+}
+
+.ServicesDirection img {
+    transition: 400ms;
+    width: 26px;
+    height: 26px;
+    margin-left: 16px;
+}
+

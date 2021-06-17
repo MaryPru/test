@@ -1,0 +1,80 @@
+.Projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* box-sizing: border-box;
+    border-top: red;*/
+}
+
+
+.ProjectsCard {
+    width: calc(100%/2-40px);
+}
+.ProjectsCards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ProjectsCards img {
+    max-width: 680px;
+    height: auto;
+    object-fit: cover;
+   
+}
+
+
+.ProjectsTitle {
+    font-family: TT Commons;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #27262D;
+    margin-bottom: 90px;
+}
+
+.ProjectCard .title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    color: #27262D;
+    margin: 24px 0 8px;
+}
+
+.ProjectCard .subTitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+    color: #838383;
+    margin-bottom: 80px;
+}
+
+.ProjectsSubTitle .text {
+    font-family: TT Commons;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+    color: #27262D;
+    margin-right: 16px;
+}
+
+.ProjectsSubTitle {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.ProjectsSubTitle img {
+    width: 26px;
+    height: 26px;
+}
+
+
+
