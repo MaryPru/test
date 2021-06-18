@@ -14,3 +14,10 @@ margin-top: 111px;
     justify-content:center;
    
 }
+
+
+@media screen and (max-width: 1200px) {
+    .HomeTitle  {
+        padding-left: 10px;
+    }
+    }

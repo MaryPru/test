@@ -2,8 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   /* box-sizing: border-box;
-    border-top: red;*/
+ 
 }
 
 
@@ -20,6 +19,7 @@
     max-width: 680px;
     height: auto;
     object-fit: cover;
+    cursor: pointer;
    
 }
 
@@ -62,19 +62,65 @@
     font-size: 48px;
     line-height: 120%;
     color: #27262D;
-    margin-right: 16px;
+    
 }
 
 .ProjectsSubTitle {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    cursor: pointer;
+    
+    
 }
 
 .ProjectsSubTitle img {
     width: 26px;
     height: 26px;
+    margin-left: 16px;
+    transition: 400ms;
+    
+}
+.ProjectsSubTitle:hover img  {
+        margin-left: 40px;
 }
 
+@media screen and (max-width: 1200px) {
+    .ProjectsCards {
+        justify-content: center;
+    }
+       
+    .ProjectsTitle {
+        text-align: center;
+    }
+
+    .ProjectsSubTitle {
+        margin-left: 10px;
+    }
+}
+
+    @media screen and (max-width: 900px) {
+    .ProjectsCards img {
+        max-width: 400px;
+    }  
+
+    .ServicesDirection .name {
+  
+    font-size: 20px;
+    line-height: 23px;
+   } 
+
+   .ServicesDirection {
+    
+    padding: 20px 0;
+   
+}
+
+.ServicesDescription {
+    padding: 90px 170px;
+}     
+
+
+}
 
 

@@ -14,7 +14,7 @@ const FirstBlock = () => {
                         <div className="FirstBlockSubTitle">НАШ шоурил</div>
                         <img src={vector} alt="vector" />
                     </div>
-                    <div className="FirstBlockVideo"><iframe width="916" height="518" src="https://www.youtube.com/embed/IFBqJSPs5ek" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe></div>
+                    <div><iframe width="916" height="518" src="https://www.youtube.com/embed/IFBqJSPs5ek" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe></div>
                 </div>
             </div>
         </div>

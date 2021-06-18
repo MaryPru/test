@@ -12,13 +12,14 @@
     font-weight: bold;
     font-size: 90px;
     line-height: 120%;
-
     color: #FFFFFF;
 }
+
 .formInputs {
     display: flex;
     flex-direction: column;
 }
+
 .formInputs input {
     padding: 27px 0;
     border: none;
@@ -114,3 +115,32 @@
 .formInputs button:hover path {
     fill: #9c9c9c;
 }
+
+@media screen and (max-width: 1200px) {
+    .feedBackForm .title {
+        text-align: center;
+    }
+    .formInputs {
+        margin-left: 10px;
+    }
+    }
+
+    @media screen and (max-width: 1200px) {
+    .formInputs {
+        margin-right: 30px;
+        } 
+    
+        .feedBackForm .title {
+            
+            font-size: 50px;
+           
+        }
+
+        .feedBackForm {
+            background: #27262D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px;
+        }
+    }        

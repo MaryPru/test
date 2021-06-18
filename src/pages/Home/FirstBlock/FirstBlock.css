@@ -6,8 +6,12 @@
 }
 .FirstBlockName img {
     margin: 120px 0;
-}
+ }
 
+.FirstBlockName  {
+    margin-bottom: 90px;
+    border-bottom: 1px solid #27262D;;
+}
 .FirstBlockHeader {
     display: flex;
     cursor: pointer;
@@ -37,4 +41,36 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    ;
 }
+
+@media screen and (max-width: 1200px) {
+    .FirstBlockGeneral {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .FirstBlockHeader {
+        margin-bottom: 30px;
+    }
+
+    .FirstBlockName img {
+        margin-left: 10px;
+    }
+       
+   
+    }
+
+    @media screen and (max-width: 900px) {
+                  
+        .FirstBlock iframe{
+            display: block;
+            width: 400px;
+            height: 225px;
+    }      
+
+        .FirstBlock {
+        margin-bottom: 100px                    
+    }
+}  

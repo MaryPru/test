@@ -1,7 +1,12 @@
+import ContactsHeader from "../ContactsPage/ContactsHeader/ContactsHeader"
+import WorkingForm from "../ContactsPage/WorkingForm/WorkingForm"
+
+
 const ContactsPage = () => {
   return (
     <>
-      <div>Контакты</div>
+     <ContactsHeader/>
+     <WorkingForm/>
     </>
   );
 }

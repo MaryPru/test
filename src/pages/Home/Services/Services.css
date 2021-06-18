@@ -59,3 +59,17 @@
     margin-left: 16px;
 }
 
+@media screen and (max-width: 1200px) {
+    .ServicesTitle {
+        text-align: center;
+    }
+
+    .ServicesDescription {
+        padding: 90px 220px  ;
+             
+    }
+
+    .ServicesDirections {
+        margin-left: 10px;
+    }
+    }

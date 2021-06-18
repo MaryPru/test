@@ -1,0 +1,53 @@
+.contactsHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactsHeaderWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 90px 0;
+}
+
+.ContactsHeaderTitle {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 120%;
+    color: #27262D; 
+    padding-right: 295px;
+}
+
+.ContactsHeaderAttributsWrapper {
+    padding: 100px 0;
+  
+}
+
+.ContactsHeaderAttributTitle {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #27262D;
+}
+.WrapperDescriptions:first-child {
+   margin-bottom: 32px;
+}
+
+.WrapperDescriptions:last-child {
+   margin-top: 32px;
+}
+
+.ContactsHeaderAttributDescription {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    color: #27262D;
+
+}
