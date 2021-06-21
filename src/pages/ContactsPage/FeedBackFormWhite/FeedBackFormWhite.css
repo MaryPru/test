@@ -1,32 +1,33 @@
-.feedBackForm {
-    background: #27262D;
+.feedBackFormWhite {
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 200px;
+    margin-bottom: 200px;
 }
 
-.feedBackForm .title {
+.feedBackFormWhite .title {
     font-family: TT Commons;
     font-style: normal;
     font-weight: bold;
     font-size: 90px;
     line-height: 120%;
-    color: #FFFFFF;
+    color: black;
 }
 
-.formInputs {
+.feedBackFormWhite .formInputs {
     display: flex;
     flex-direction: column;
 }
 
-.formInputs input {
+.feedBackFormWhite .formInputs input {
     padding: 27px 0;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
     background: transparent;
     outline: none;
-    color: white;
+    color: black;
 
     font-family: Inter;
     font-style: normal;
@@ -36,12 +37,12 @@
     margin-bottom: 40px;
 }
 
-.formInputs textarea {
+.feedBackFormWhite .formInputs textarea {
     border: none;
-    border: 1px solid white;
+    border: 1px solid rgb(22, 21, 21);
     background: transparent;
     outline: none;
-    color: white;
+    color: black;
     resize: none;
     height: 121px;
     width: 100%;
@@ -55,7 +56,7 @@
     box-sizing: border-box;
 }
 
-.textArea label {
+.feedBackFormWhite .textArea label {
     display: block; 
     margin: 27px 0 18px 0;
     font-family: Inter;
@@ -63,24 +64,24 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 150%;
-    color: #FFFFFF;
+    color: black;
 }
 
-.formInputs input::placeholder {
-    color: white;
+.feedBackFormWhite .formInputs input::placeholder {
+    color: black;
 }
 
-.formInputs textarea::placeholder {
-    color: white;
+.feedBackFormWhite .formInputs textarea::placeholder {
+    color: black;
 }
 
-.formInputs button {
+.feedBackFormWhite .formInputs button {
     font-family: TT Commons;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 120%;
-    color: #FFFFFF;
+    color: black;
     transition: 400ms;
     background: transparent;
     border: none;
@@ -91,53 +92,53 @@
     cursor: pointer;
 }
 
-.formInputs svg {
+.feedBackFormWhite .formInputs svg {
     width: 100px;
     height: 50px;
     margin-left: 20px;
     transition: 400ms;
 }
 
-.formInputs button path {
-    fill: white;
+.feedBackFormWhite .formInputs button path {
+    fill: black;
     transition: 400ms;
 }
 
-.formInputs button:hover {
-    color: #9c9c9c;
+.feedBackFormWhite .formInputs button:hover {
+    color: #52a15c;
 }
 
-.formInputs button:hover svg {
-    color: #9c9c9c;
+.feedBackFormWhite .formInputs button:hover svg {
+    color: #52a15c;
     margin-left: 60px;
 }
 
-.formInputs button:hover path {
-    fill: #9c9c9c;
+.feedBackFormWhite .formInputs button:hover path {
+    fill: #52a15c;
 }
 
 @media screen and (max-width: 1200px) {
-    .feedBackForm .title {
+    .feedBackFormWhite  .title {
         text-align: center;
     }
-    .formInputs {
+    .feedBackFormWhite .formInputs {
         margin-left: 10px;
     }
     }
 
-    @media screen and (max-width: 1200px) {
-    .formInputs {
+    @media screen and (max-width: 900px) {
+        .feedBackFormWhite .formInputs {
         margin-right: 30px;
         } 
     
-        .feedBackForm .title {
+        .feedBackFormWhite .title {
             
             font-size: 50px;
            
         }
 
-        .feedBackForm {
-            background: #27262D;
+        .feedBackFormWhite {
+            background: white;
             display: flex;
             justify-content: center;
             align-items: center;

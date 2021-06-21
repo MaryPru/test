@@ -3,7 +3,8 @@ import "../../App.css"
 import FirstBlock from "./FirstBlock/FirstBlock";
 import Projects from "./Projects/Projects"
 import Services from "./Services/Services"
-import FeedBackForm from "./FeedBackForm/FeedBackForm";
+import FeedBackForm from "../../components/FeedBackForm/FeedBackForm"
+
 
 
 const HomePage = () => {
@@ -18,7 +19,8 @@ const HomePage = () => {
       <FirstBlock />
       <Projects />
       <Services />
-      <FeedBackForm />
+      <FeedBackForm/>
+     
     </>
   );
 }

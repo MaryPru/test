@@ -1,0 +1,110 @@
+.ourProjects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    width: 100%;
+}
+
+.cardsWrapper {
+    margin-bottom: 200px;
+}
+
+.ourProjectTitle {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #27262D;
+    margin: 208px 0;
+
+}
+
+.WrapperDescripton {
+    margin: 40px;
+}
+
+
+
+.WrapperDescripton .title {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 115%;
+    color: #27262D;
+    padding-bottom: 40px;
+}
+
+.WrapperDescripton .subTitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #27262D;
+    padding-bottom: 40px;
+}
+
+.WrapperDescripton .linkWrapper {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+
+}
+
+.WrapperDescripton .linkWrapper .link{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FF371C;
+}
+
+.WrapperDescripton .linkWrapper img {
+    width: 13px;
+    height: 13px;
+    margin-left: 10px;
+}
+
+.WrapperDescripton  .path {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #27262D;
+}
+
+@media screen and (max-width: 1200px) {
+    .card img {
+        max-width: 500px;
+        height: auto;
+    }
+    .card {
+     flex-direction: column;
+     justify-content: center;
+    }
+
+    .WrapperDescripton .title {
+        font-size: 35px;
+        padding: 40px;
+        text-align: center;
+    }
+    .ourProjectTitle {
+        text-align: center;
+    }
+    }

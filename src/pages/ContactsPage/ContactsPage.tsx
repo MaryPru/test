@@ -1,12 +1,12 @@
 import ContactsHeader from "../ContactsPage/ContactsHeader/ContactsHeader"
-import WorkingForm from "../ContactsPage/WorkingForm/WorkingForm"
+import FeedBackFormWhite from "../ContactsPage/FeedBackFormWhite/FeedBackFormWhite"
 
 
 const ContactsPage = () => {
   return (
     <>
      <ContactsHeader/>
-     <WorkingForm/>
+     <FeedBackFormWhite/>
     </>
   );
 }

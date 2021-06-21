@@ -1,8 +1,8 @@
-import "./FeedBackForm.css"
+import "./FeedBackFormWhite.css"
 import ArrowIcon from "../../../components/Icons/ArrowIcon";
 import { useState } from "react";
 
-const FeedBackForm = () => {
+const FeedBackFormWhite = () => {
 
     const [name,setName] = useState('')
     const [phone,setPhone] = useState('')
@@ -23,7 +23,7 @@ const FeedBackForm = () => {
 
     return (
         <>
-            <div className="feedBackForm">
+            <div className="feedBackFormWhite">
                 <div className="contentWrapper">
                     <div className="title">
                         Начнем работать вместе?
@@ -63,4 +63,4 @@ const FeedBackForm = () => {
     );
 }
 
-export default FeedBackForm;
+export default FeedBackFormWhite;
