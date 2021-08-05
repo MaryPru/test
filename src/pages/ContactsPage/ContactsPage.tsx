@@ -1,12 +1,12 @@
 import ContactsHeader from "../ContactsPage/ContactsHeader/ContactsHeader"
-import FeedBackFormWhite from "../ContactsPage/FeedBackFormWhite/FeedBackFormWhite"
+import FeedBackForm from "../../components/FeedBackForm/FeedBackForm";
 
 
 const ContactsPage = () => {
   return (
     <>
      <ContactsHeader/>
-     <FeedBackFormWhite/>
+     <FeedBackForm type={'white'}/>
     </>
   );
 }

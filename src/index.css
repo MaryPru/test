@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "InterBold";
+  src: local("InterBold"),
+  url("./fonts/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+  url("./fonts/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TT Commons";
+  src: local("TT Commons"),
+  url("./fonts/TT Commons Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: local("TT Norms"),
+  url("./fonts/TTNorms-Regular.otf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "TTNormsBold";
+  src: local("TTNormsBold"),
+  url("./fonts/TTNorms-Bold.ttf") format("truetype");
+}

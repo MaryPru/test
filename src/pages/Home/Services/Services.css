@@ -30,26 +30,24 @@
 .ServicesDirection {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #27262D;
+    border-bottom: 1px solid #27262d26;
     padding: 40px 0;
     cursor: pointer;
 }
 
-
-.ServicesDirection:hover img{
+.ServicesDirection:hover img {
     margin-left: 46px;
 }
 
-
-
 .ServicesDirection .name {
-    font-family: Inter;
+    font-family: InterBold;
     font-style: normal;
     font-weight: 900;
     font-size: 32px;
     line-height: 39px;
     text-transform: uppercase;
     color: #27262D;
+    letter-spacing: 0.03em;
 }
 
 .ServicesDirection img {
@@ -62,14 +60,16 @@
 @media screen and (max-width: 1200px) {
     .ServicesTitle {
         text-align: center;
+        margin-top: 50px;
     }
 
     .ServicesDescription {
-        padding: 90px 220px  ;
-             
+        padding: 90px 220px;
+
     }
 
     .ServicesDirections {
-        margin-left: 10px;
+        margin: 0 auto;
+        width: 80%;
     }
-    }
+}

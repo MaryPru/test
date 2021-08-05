@@ -8,17 +8,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 90px 0;
+    margin-top: 90px;
 }
 
 .ContactsHeaderTitle {
-    font-family: TT Norms;
+    font-family: TTNormsBold;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 1000;
     font-size: 90px;
     line-height: 120%;
     color: #27262D; 
     padding-right: 295px;
+    text-transform: uppercase;
 }
 
 .ContactsHeaderAttributsWrapper {

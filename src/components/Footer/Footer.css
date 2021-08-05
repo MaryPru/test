@@ -8,9 +8,7 @@
 
 .wrapperFooterBody {
     display: flex;
- 
-    justify-content: space-between;
-}
+ }
 
 .footerContacts {
   margin-right: 40px;
@@ -52,7 +50,10 @@
 .footer svg path:nth-child(2) {
     fill: white;
 
-} 
+}
+.footer svg {
+    margin-right: 702px;
+}
 
 .footerCopyright div {
     font-family: Inter;
@@ -74,6 +75,14 @@
 
 @media screen and (max-width: 1200px) {
     .footer .contentWrapper {
-      padding: 10px;
+        width: 80%;
+    }
+
+    .wrapperFooterBody {
+        flex-direction: column;
+    }
+
+    .footerContactsMenuWrapper {
+        margin-top: 30px;
     }
  }

@@ -8,7 +8,7 @@ const SP = () => {
     <>
       
      <ServicesPage/>
-      <FeedBackForm/>
+      <FeedBackForm type={"black"}/>
      
     </>
   );

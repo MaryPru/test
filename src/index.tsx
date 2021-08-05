@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './fonts/Inter-Regular.ttf';
+import './fonts/TT Commons Regular.otf';
+import './fonts/TTNorms-Regular.otf';
+import './fonts/Inter-Bold.ttf'
+import './fonts/TTNorms-Bold.ttf'
 
 ReactDOM.render(
   <React.StrictMode>

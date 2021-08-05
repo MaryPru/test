@@ -19,7 +19,7 @@ const HomePage = () => {
       <FirstBlock />
       <Projects />
       <Services />
-      <FeedBackForm/>
+      <FeedBackForm type={"black"}/>
      
     </>
   );

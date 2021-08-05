@@ -10,7 +10,7 @@
 
 .FirstBlockName  {
     margin-bottom: 90px;
-    border-bottom: 1px solid #27262D;;
+    border-bottom: 1px solid #27262d26;
 }
 .FirstBlockHeader {
     display: flex;
@@ -45,6 +45,11 @@
 }
 
 @media screen and (max-width: 1200px) {
+
+    .FirstBlock {
+        margin-bottom: 70px;
+    }
+
     .FirstBlockGeneral {
         flex-direction: column;
         align-items: center;

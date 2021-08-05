@@ -8,7 +8,7 @@ const PortfolioPage = () => {
     <>
       
      <OurProjects/>
-      <FeedBackForm/>
+      <FeedBackForm type={"black"}/>
      
     </>
   );

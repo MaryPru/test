@@ -6,7 +6,7 @@
 }
 
 .servicesPageTitle {
-    font-family: TT Norms;
+    font-family:TTNormsBold;
     font-style: normal;
     font-weight: 800;
     font-size: 90px;
@@ -17,14 +17,18 @@
     padding: 120px 0;
 }
 
+.wrapperTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .cardDescriptionWrapper .title {
-    font-family: Inter;
+    font-family: InterBold;
     font-style: normal;
     font-weight: 900;
     font-size: 32px;
     line-height: 39px;
-  
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #27262D;
@@ -45,6 +49,7 @@
     margin-bottom: 90px;
     padding-right: 55%
 }
+
 .cardDescriptionWrapper .direction {
     font-family: Inter;
     font-style: normal;
@@ -56,18 +61,18 @@
     color: #27262D;
     padding: 17px 0;
     border-bottom: 1px solid rgba(39, 38, 45, 0.15);
-   
+
 }
 
 .cardDescriptionWrapper img {
- 
     margin-bottom: 170px;
 }
 
 .servicesPage .card img {
     position: absolute;
-    right: 0;
-      
+    top:50%;
+    left:75%;
+    transform:translate(-50%, -50%);
 }
 
 .servicesPage .card {
@@ -75,34 +80,32 @@
 }
 
 @media screen and (max-width: 1200px) {
-   .cardDescriptionWrapper {
-    padding-left: 20px;
-   }
-
-   .servicesPageTitle {
-       text-align: center;
-   }
+    .cardDescriptionWrapper {
+        width: 80%;
+        order: 2;
     }
 
 
-    
-@media screen and (max-width: 900px) {
     .servicesPage .card img {
-      width: 300px;
-      height: auto;
-      position: static;
-      order: 1;
-   
-  }
-  .cardDescriptionWrapper .title {
-      text-align: center;
-  }
-  .card .description {
-    padding-right: 0;
-    text-align: center;
-  }
-  .cardDescriptionWrapper {
-      order: 2;
-  }
+        position: static;
+        order: 1;
+        width: 80px;
 
-     }
+    }
+
+
+    .cardDescriptionWrapper .description {
+        padding-right: 25%;
+        margin-bottom: 25px;
+    }
+
+    .servicesPageTitle {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+
+    @media screen and (max-width: 900px) {
+
+    }
+}
