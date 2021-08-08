@@ -1,0 +1,73 @@
+.strategy {
+    display: grid;
+    grid-template-columns: 680px 680px;
+    align-items: center;
+    margin-bottom: 119px;
+    border-bottom: 1px solid #27262d26;
+    padding-bottom: 117px;
+}
+
+.strategyTitle {
+    font-family: "TT CommonsBold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: #27262D;
+    margin-right: 40px;
+}
+
+.strategyDescription {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #27262D;
+}
+
+@media screen and (max-width: 1200px) {
+    .strategy {
+        grid-template-columns: 520px 520px;
+        padding-bottom: 60px;
+    }
+
+    .strategyTitle {
+        font-size: 56px;
+    }
+    .strategyDescription {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .strategy {
+        grid-template-columns: 350px 350px;
+        padding-bottom: 40px;
+    }
+
+    .strategyTitle {
+        font-size: 42px;
+    }
+    .strategyDescription {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .strategyTitle {
+        font-size: 34px;
+        text-align: center;
+        padding: 10px 20px;
+        margin-right: 0;
+    }
+
+    .strategy {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0px;
+        margin-bottom: 30px;
+    }
+}

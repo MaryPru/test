@@ -1,4 +1,4 @@
-.servicesPage {
+.servicesPageItem {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,7 +6,7 @@
 }
 
 .servicesPageTitle {
-    font-family:TTNormsBold;
+    font-family: TTNormsBold;
     font-style: normal;
     font-weight: 800;
     font-size: 90px;
@@ -42,8 +42,6 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.01em;
     color: #27262D;
     margin-bottom: 90px;
@@ -68,14 +66,14 @@
     margin-bottom: 170px;
 }
 
-.servicesPage .card img {
+.servicesPageItem .card img {
     position: absolute;
-    top:50%;
-    left:75%;
-    transform:translate(-50%, -50%);
+    top: 60%;
+    left: 80%;
+    transform: translate(-50%, -50%);
 }
 
-.servicesPage .card {
+.servicesPageItem .card {
     position: relative;
 }
 
@@ -83,14 +81,19 @@
     .cardDescriptionWrapper {
         width: 80%;
         order: 2;
+
     }
 
-
-    .servicesPage .card img {
+    .servicesPageItem .card img {
         position: static;
         order: 1;
         width: 80px;
+        transform: none;
 
+    }
+
+    .cardDescriptionWrapper img {
+        margin-bottom: 40px;
     }
 
 
@@ -104,8 +107,67 @@
         text-align: center;
     }
 
+}
 
-    @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
+    .cardDescriptionWrapper .description {
+        padding-right: 0%;
+    }
 
+    .servicesPageItem {
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cardDescriptionWrapper .title {
+        font-size: 22px;
+        margin: 20px 0 20px 0;
+    }
+
+    .cardDescriptionWrapper .description {
+        font-size: 10px;
+    }
+
+    .cardDescriptionWrapper .direction {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 7px 0;
+    }
+
+    .servicesPageItem {
+        margin: 0;
+    }
+
+    .servicesPageTitle {
+        padding: 70px 0 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .servicesPageTitle {
+        font-size: 58px;
+    }
+
+    .servicesPageItem .card img {
+        width: 60px;
+    }
+
+    .cardDescriptionWrapper .title {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .cardDescriptionWrapper .description {
+        line-height: 110%;
+    }
+
+    .cardDescriptionWrapper img {
+        margin-bottom: 10px;
+    }
+
+    .card {
+
+        margin-bottom: 30px;
     }
 }
