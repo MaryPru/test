@@ -9,7 +9,7 @@ import Footer from "../../components/Footer/Footer"
 import ContactsPage from "../../pages/ContactsPage/ContactsPage";
 
 import PortfolioPage from "../../pages/Potfolio/PortfolioPage"
-import SP from "../../pages/ServicesPage/SP"
+import ServicesPage from "../../pages/ServicesPage/ServicesPage"
 
 export default function Routers() {
     return (
@@ -24,7 +24,7 @@ export default function Routers() {
                         <PortfolioPage/>
                     </Route>
                     <Route path="/servicesPage">
-                        <SP/>
+                        <ServicesPage/>
                     </Route>
                     <Route path="/">
                         <HomePage />

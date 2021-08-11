@@ -8,6 +8,7 @@ import './fonts/TT Commons Regular.otf';
 import './fonts/TTNorms-Regular.otf';
 import './fonts/Inter-Bold.ttf'
 import './fonts/TTNorms-Bold.ttf'
+import './fonts/TTCommonsBold.ttf'
 
 ReactDOM.render(
   <React.StrictMode>

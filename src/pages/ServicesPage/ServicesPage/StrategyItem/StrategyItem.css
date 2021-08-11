@@ -1,0 +1,27 @@
+.strategyItem {
+    margin-bottom: 150px;
+}
+
+.strategyWrapper {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .contentWrapper {
+        width: 80%;
+    }
+
+    .strategyItem {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contentWrapper {
+        width: 70%;
+    }
+
+    .strategyItem {
+        margin-bottom: 100px;
+    }
+}

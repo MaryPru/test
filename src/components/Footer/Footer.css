@@ -72,7 +72,6 @@
     margin: 40px 0 90px;
 }
 
-
 @media screen and (max-width: 1200px) {
     .footer .contentWrapper {
         width: 80%;
@@ -85,4 +84,12 @@
     .footerContactsMenuWrapper {
         margin-top: 30px;
     }
- }
+
+    .footer svg {
+        width: 50px;
+    }
+
+    .footer {
+        padding-top: 15px;
+    }
+}

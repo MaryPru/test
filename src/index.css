@@ -31,6 +31,11 @@ code {
 }
 
 @font-face {
+  font-family: "TT CommonsBold";
+  src: local("TT CommonsBold"),
+  url("fonts/TTCommonsBold.ttf") format("truetype");
+}
+@font-face {
   font-family: "TT Norms";
   src: local("TT Norms"),
   url("./fonts/TTNorms-Regular.otf") format("truetype");
