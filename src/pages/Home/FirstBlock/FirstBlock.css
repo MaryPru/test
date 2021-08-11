@@ -4,14 +4,16 @@
     justify-content: center;
     margin-bottom: 200px;
 }
+
 .FirstBlockName img {
     margin: 120px 0;
- }
+}
 
-.FirstBlockName  {
+.FirstBlockName {
     margin-bottom: 90px;
     border-bottom: 1px solid #27262d26;
 }
+
 .FirstBlockHeader {
     display: flex;
     cursor: pointer;
@@ -30,22 +32,17 @@
     transition: 400ms;
 }
 
-
 .FirstBlockHeader:hover .FirstBlockSubTitle {
     margin-right: 30px;
 }
 
-
-
 .FirstBlockGeneral {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-    ;
+    justify-content: space-between;;
 }
 
 @media screen and (max-width: 1200px) {
-
     .FirstBlock {
         margin-bottom: 70px;
     }
@@ -61,21 +58,27 @@
     }
 
     .FirstBlockName img {
-        margin-left: 10px;
+        margin: 70px 10px;
+        width: 60%;
     }
-       
-   
-    }
+}
 
-    @media screen and (max-width: 900px) {
-                  
-        .FirstBlock iframe{
-            display: block;
-            width: 400px;
-            height: 225px;
-    }      
-
-        .FirstBlock {
-        margin-bottom: 100px                    
+@media screen and (max-width: 900px) {
+    .FirstBlock iframe {
+        display: block;
+        width: 400px;
+        height: 225px;
     }
-}  
+}
+
+@media screen and (max-width: 600px) {
+    .FirstBlockName {
+        margin-bottom: 42px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .FirstBlockName img {
+        margin: 32px 41px;
+    }
+}

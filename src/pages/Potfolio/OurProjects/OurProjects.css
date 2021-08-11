@@ -4,7 +4,7 @@
     justify-content: center;
 }
 
-.card {
+.ourProjects .cardProject {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,15 +28,15 @@
     margin: 208px 0;
 }
 
-.card .WrapperDescripton:nth-child(odd) {
+.cardProject .wrapperDescription:nth-child(odd) {
     margin-right: 40px;
 }
 
-.card .WrapperDescripton:nth-child(even) {
+.cardProject .wrapperDescription:nth-child(even) {
     margin-left: 40px;
 }
 
-.WrapperDescripton .title {
+.wrapperDescription .title {
     font-family: TTNormsBold;
     font-style: normal;
     font-weight: bold;
@@ -46,7 +46,7 @@
     padding-bottom: 40px;
 }
 
-.WrapperDescripton .subTitle {
+.wrapperDescription .subTitle {
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -56,14 +56,14 @@
     padding-bottom: 40px;
 }
 
-.WrapperDescripton .linkWrapper {
+.wrapperDescription .linkWrapper {
     display: flex;
     align-items: center;
     padding-bottom: 40px;
     cursor: pointer;
 }
 
-.WrapperDescripton .linkWrapper .link {
+.wrapperDescription .linkWrapper .link {
     font-family: Inter;
     font-style: normal;
     font-weight: bold;
@@ -75,17 +75,17 @@
     transition: 400ms;
 }
 
-.WrapperDescripton .linkWrapper .link:hover {
+.wrapperDescription .linkWrapper .link:hover {
     margin-right: 30px;
 }
 
-.WrapperDescripton .linkWrapper img {
+.wrapperDescription .linkWrapper img {
     width: 13px;
     height: 13px;
     margin-left: 10px;
 }
 
-.WrapperDescripton .path {
+.wrapperDescription .path {
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
@@ -103,21 +103,20 @@
         margin-bottom: 0;
     }
 
-    .card img {
+    .cardProject img {
         width: 100%;
         height: auto;
     }
 
-    .card {
+    .cardProject {
         flex-direction: column;
         justify-content: center;
         width: 80%;
         margin-bottom: 70px;
     }
 
-    .WrapperDescripton .title {
+    .wrapperDescription .title {
         font-size: 35px;
-        text-align: center;
         padding-top: 10px;
     }
 
@@ -127,24 +126,50 @@
         margin: 80px auto 60px;
     }
 
-    .card .WrapperDescripton {
+    .cardProject .wrapperDescription {
         order: 2;
         padding: 0 80px;
     }
 
-    .card .WrapperDescripton:nth-child(odd) {
+    .cardProject .wrapperDescription:nth-child(odd) {
         margin-right: 0px;
     }
 
-    .card .WrapperDescripton:nth-child(even) {
+    .cardProject .wrapperDescription:nth-child(even) {
         margin-left: 0px;
     }
 }
 
 @media screen and (max-width: 900px) {
-
     .ourProjectTitle {
-    font-size: 70px;
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ourProjectTitle {
+        font-size: 39px;
     }
 
+    .cardProject .wrapperDescription {
+        background-color: #14376f57;
+        padding: 30px 30px;
+    }
+
+    .ourProjects .cardProject {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    ourProjectTitle {
+        padding: 0;
+        margin: 80px auto 29px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .ourProjectTitle {
+        font-size: 27px;
+    }
 }

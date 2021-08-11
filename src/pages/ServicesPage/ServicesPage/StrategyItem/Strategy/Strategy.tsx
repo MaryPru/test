@@ -6,14 +6,13 @@ interface StrategyProps {
 }
 
 const Strategy = (props: StrategyProps) => {
-    const {title, description} = props
+    const { title, description } = props
     return (
         <div className="strategy">
-
-                <div className="strategyTitle">{title}</div>
-                <div className="strategyDescription"> {description}  </div>
-
+            <div className="strategyTitle">{title}</div>
+            <div className="strategyDescription"> {description}  </div>
         </div>
     )
 }
+
 export default Strategy;

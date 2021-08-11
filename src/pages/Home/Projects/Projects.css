@@ -4,7 +4,7 @@
     justify-content: center;
 }
 
-.ProjectsCard {
+.ProjectCard {
     width: calc(100% / 2 - 40px);
 }
 
@@ -60,23 +60,19 @@
     font-size: 48px;
     line-height: 34%;
     color: #27262D;
-
 }
 
 .ProjectsSubTitle {
     display: flex;
     margin-top: 10px;
     cursor: pointer;
-
-
 }
 
-.ProjectsSubTitle img {
+.ProjectsSubTitle svg {
     width: 26px;
     height: 26px;
     margin-left: 16px;
     transition: 400ms;
-
 }
 
 .ProjectsSubTitle:hover img {
@@ -100,25 +96,76 @@
 
 @media screen and (max-width: 900px) {
     .ProjectsCards img {
-        max-width: 400px;
+        max-width: 500px;
     }
 
-    .ServicesDirection .name {
-        font-size: 20px;
-        line-height: 23px;
+    .ProjectCard {
+        width: 60%;
+    }
+    .ProjectsCards {
+        flex-direction: column;
     }
 
-    .ServicesDirection {
+    .ProjectsSubTitle {
+        margin-left: 134px;
+    }
 
+    .ProjectsSubTitle .text {
+        font-size: 35px;
+        line-height: 46%;
+    }
+
+    .ProjectCard .subTitle {
+        margin-bottom: 37px;
         padding: 20px 0;
-
     }
-
-    .ServicesDescription {
-        padding: 90px 170px;
+    .ProjectsTitle {
+        font-size: 67px;
     }
-
-
 }
 
+@media screen and (max-width: 400px) {
+    .ProjectsCards img {
+        max-width: 73%;
+    }
+
+    .ProjectsTitle {
+        margin-bottom: 26px;
+        font-size: 31px;
+    }
+
+    .ProjectCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ProjectsSubTitle {
+        justify-content: flex-end;
+        padding: 20px;
+        align-items: center;
+        background-color: #052b66;
+        margin-left: 0px;
+    }
+
+    .ProjectsSubTitle .text {
+        font-size: 24px;
+        line-height: 0;
+        color: white;
+    }
+
+    .ProjectsSubTitle svg {
+        width: 16px;
+        margin-left: 5px;
+    }
+
+    .ProjectsSubTitle svg path {
+      fill: white;
+    }
+
+    .FirstBlock iframe {
+        width: 360px;
+    }
+}
 

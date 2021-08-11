@@ -8,16 +8,16 @@
 
 .wrapperFooterBody {
     display: flex;
- }
+}
 
 .footerContacts {
-  margin-right: 40px;
+    margin-right: 40px;
 }
 
 .footerContactsMenuWrapper {
     display: flex;
-
 }
+
 .footerTitle {
     font-family: Inter;
     font-style: normal;
@@ -45,12 +45,12 @@
 
 .footer svg path:nth-child(1) {
     stroke: white;
-} 
+}
 
 .footer svg path:nth-child(2) {
     fill: white;
-
 }
+
 .footer svg {
     margin-right: 702px;
 }
@@ -86,10 +86,29 @@
     }
 
     .footer svg {
-        width: 50px;
+        width: 42px;
     }
 
     .footer {
         padding-top: 15px;
     }
+
+    .footerMenu {
+        min-width: 100%;
+    }
 }
+
+@media screen and (max-width: 400px) {
+    .footer svg {
+        margin-right: 0;
+    }
+
+    .footerContactsMenuWrapper {
+        flex-direction: column;
+    }
+
+    .footerContacts {
+        padding-bottom: 30px;
+    }
+}
+

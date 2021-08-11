@@ -1,23 +1,39 @@
 .HomeTitle {
-font-family: Inter;
-font-style: normal;
-font-weight: normal;
-font-size: 48px;
-line-height: 120%;
-color: #27262D;
-margin-top: 111px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 120%;
+    color: #27262D;
+    margin-top: 111px;
 }
 
-.HomePage  {
+.HomePage {
     display: flex;
     align-items: center;
-    justify-content:center;
-   
+    justify-content: center;
+
 }
 
-
 @media screen and (max-width: 1200px) {
-    .HomeTitle  {
+    .HomeTitle {
         padding-left: 10px;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .HomeTitle {
+        font-size: 30px;
     }
+}
+
+@media screen and (max-width: 400px) {
+    .HomeTitle {
+        padding-left: 38px;
+    }
+    .HomeTitle {
+        font-size: 18px;
+    }
+
+}
+
