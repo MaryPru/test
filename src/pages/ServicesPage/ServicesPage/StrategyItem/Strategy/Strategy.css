@@ -2,9 +2,9 @@
     display: grid;
     grid-template-columns: 680px 680px;
     align-items: center;
-    margin-bottom: 119px;
     border-bottom: 1px solid #27262d26;
     padding-bottom: 117px;
+    padding-top: 90px;
 }
 
 .strategyTitle {
@@ -30,13 +30,15 @@
 
 @media screen and (max-width: 1200px) {
     .strategy {
-        grid-template-columns: 520px 520px;
+        grid-template-columns: 460px 460px;
         padding-bottom: 60px;
+        margin-bottom: 0;
     }
 
     .strategyTitle {
         font-size: 56px;
     }
+
     .strategyDescription {
         font-size: 16px;
     }
@@ -51,6 +53,7 @@
     .strategyTitle {
         font-size: 42px;
     }
+
     .strategyDescription {
         font-size: 14px;
     }
@@ -69,5 +72,6 @@
         flex-direction: column;
         padding-bottom: 0px;
         margin-bottom: 30px;
+        padding-top: 50px;
     }
 }

@@ -1,0 +1,21 @@
+.desktopMenu a {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    transition: 400ms;
+    color: #27262D;
+    margin-right: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.desktopMenu a:hover {
+    color: #553edb;
+}
+
+.desktopMenu a:last-child {
+    margin-right: 0;
+}
+

@@ -1,7 +1,5 @@
 import "./ContactsHeader.css"
 
-
-
 const ContactsHeader = () => {
     return (
         <>

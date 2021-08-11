@@ -64,12 +64,60 @@
     }
 
     .ServicesDescription {
-        padding: 90px 220px;
-
+        padding: 40px 130px;
     }
 
     .ServicesDirections {
         margin: 0 auto;
         width: 80%;
+    }
+
+    .Services {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .ServicesTitle {
+        font-size: 66px;
+        line-height: 72%;
+    }
+
+    .ServicesDirection .name {
+        font-size: 20px !important;
+        line-height: 23px !important;
+    }
+
+    .ServicesDirection {
+        padding: 20px 0;
+    }
+
+    .ServicesDescription {
+        padding: 50px 109px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .ServicesDescription {
+        padding: 20px 11px;
+        font-size: 10px;
+    }
+
+    .ServicesDirection .name {
+        font-size: 10px !important;
+        line-height: 12px !important;
+    }
+
+    .ServicesDirection img {
+        width: 13px;
+        margin-left: 6px;
+    }
+
+    .Services {
+        margin-bottom: 40px;
+    }
+
+    .ServicesTitle {
+        font-size: 48px;
     }
 }

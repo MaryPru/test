@@ -1,7 +1,11 @@
 import "./Services.css"
 import vector from "../../../assets/img/Vector.svg"
+import ServicesDirection from "./ServicesDirection/ServicesDirection";
 
 const Services = () => {
+
+    const data = ['Разработка мобильных приложений', 'Разработка Интернет-магазина', 'Разработка Веб-сайтов', 'Создание стартапа', 'Digital маркетинг']
+
     return (
         <>
             <div className="Services">
@@ -13,31 +17,16 @@ const Services = () => {
                     </div>
                     <div className="ServicesDirectionsWrapper">
                         <div className="ServicesDirections">
-                            <div className="ServicesDirection">
-                                <div className="name">Разработка мобильных приложений</div>
-                                <img src={vector} alt="vector" />
-                            </div>
-                            <div className="ServicesDirection">
-                                <div className="name">Разработка Интернет-магазина</div>
-                                <img src={vector} alt="vector" />
-                            </div>
-                            <div className="ServicesDirection">
-                                <div className="name">Разработка Веб-сайтов</div>
-                                <img src={vector} alt="vector" />
-                            </div>
-                            <div className="ServicesDirection">
-                                <div className="name">Создание стартапа</div>
-                                <img src={vector} alt="vector" />
-                            </div>
-                            <div className="ServicesDirection">
-                                <div className="name">Digital маркетинг</div>
-                                <img src={vector} alt="vector" />
-                            </div>
+
+                            {data.map((name) => (
+                                <ServicesDirection
+                                    name={name}
+                                />
+                            ))}
                         </div>
                     </div>
                 </div>
             </div>
-
         </>
     );
 }

@@ -1,10 +1,36 @@
 import "../OurProjects/OurProjects.css"
-import preview from "../../../assets/img/pr1.png"
-import vector from "../../../assets/img/Vector.svg"
-
-
+import CardProject from "./CardProject/CardProject"
 
 const OurProjects = () => {
+    const OurProjectsData = [
+        {
+            title: "Название проекта в две строки",
+            subTitle: "Описание проекта. Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию.",
+            link: "Посмотреть кейс",
+            path: "Дизайн / iOS разработка / Android разработка / Поддержка"
+        },
+        {
+            title: "Название проекта в две строки",
+            subTitle: "Описание проекта. Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию.",
+            link: "Посмотреть кейс",
+            path: "Дизайн / iOS разработка / Android разработка / Поддержка"
+        },
+        {
+            title: "Название проекта в две строки",
+            subTitle: "Описание проекта. Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию.",
+            link: "Посмотреть кейс",
+            path: "Дизайн / iOS разработка / Android разработка / Поддержка"
+        },
+        {
+            title: "Название проекта в две строки",
+            subTitle: "Описание проекта. Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию.",
+            link: "Посмотреть кейс",
+            path: "Дизайн / iOS разработка / Android разработка / Поддержка"
+        },
+    ]
+
+    const even = (n: number) => !(n % 2);
+
     return (
         <div className="ourProjects">
             <div className="contentWrapper">
@@ -12,72 +38,18 @@ const OurProjects = () => {
                     ПОртфолио
                 </div>
                 <div className="cardsWrapper">
-
-                    <div className="card">
-
-                        <div className="WrapperDescripton">
-                            <div className="title">Название проекта
-                                в две строки</div>
-                            <div className="subTitle">Описание проекта. Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию.</div>
-                            <div className="linkWrapper">
-                                <div className="link">Посмотреть кейс</div>
-                                <img src={vector} alt="vector" />
-                            </div>
-                            <div className="path">Дизайн / iOS разработка / Android разработка / поддержка</div>
-                        </div>
-                        <img src={preview} alt="preview" />
-                    </div> 
-                
-                    <div className="card">
-                        <img src={preview} alt="preview" />
-                        <div className="WrapperDescripton">
-                            <div className="title">Название проекта
-                                в две строки</div>
-                            <div className="subTitle">Описание проекта. Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию.</div>
-                            <div className="linkWrapper">
-                                <div className="link">Посмотреть кейс</div>
-                                <img src={vector} alt="vector" />
-                            </div>
-                            <div className="path">Дизайн / iOS разработка / Android разработка / поддержка</div>
-                        </div>
-
-                    </div>
-                    <div className="card">
-
-                        <div className="WrapperDescripton">
-                            <div className="title">Название проекта
-                                в две строки</div>
-                            <div className="subTitle">Описание проекта. Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию.</div>
-                            <div className="linkWrapper">
-                                <div className="link">Посмотреть кейс</div>
-                                <img src={vector} alt="vector" />
-                            </div>
-                            <div className="path">Дизайн / iOS разработка / Android разработка / поддержка</div>
-                        </div>
-                        <img src={preview} alt="preview" />
-                    </div>
-                    <div className="card">
-                        <img src={preview} alt="preview" />
-                        <div className="WrapperDescripton">
-                            <div className="title">Название проекта
-                                в две строки</div>
-                            <div className="subTitle">Описание проекта. Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию.</div>
-                            <div className="linkWrapper">
-                                <div className="link">Посмотреть кейс</div>
-                                <img src={vector} alt="vector" />
-                            </div>
-                            <div className="path">Дизайн / iOS разработка / Android разработка / поддержка</div>
-                        </div> 
-
-                    </div>
-                
+                    {OurProjectsData.map((project, index) =>
+                        <CardProject
+                            oven={even(index)}
+                            title={project.title}
+                            subTitle={project.subTitle}
+                            link={project.link}
+                            path={project.path}
+                        />
+                    )}
                 </div>
-
             </div>
-         
         </div>
-
-
     );
 }
 

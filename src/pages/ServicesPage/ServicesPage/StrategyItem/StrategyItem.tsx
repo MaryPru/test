@@ -7,7 +7,6 @@ interface StrategyProps {
     description: string
 }
 
-
 const StrategyItem = () => {
 
     const StrategyData = useSelector((state: any) => state.servicesReducers)

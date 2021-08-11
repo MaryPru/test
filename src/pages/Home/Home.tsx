@@ -5,8 +5,6 @@ import Projects from "./Projects/Projects"
 import Services from "./Services/Services"
 import FeedBackForm from "../../components/FeedBackForm/FeedBackForm"
 
-
-
 const HomePage = () => {
   return (
     <>
@@ -19,8 +17,7 @@ const HomePage = () => {
       <FirstBlock />
       <Projects />
       <Services />
-      <FeedBackForm type={"black"}/>
-     
+      <FeedBackForm type={"black"} />
     </>
   );
 }

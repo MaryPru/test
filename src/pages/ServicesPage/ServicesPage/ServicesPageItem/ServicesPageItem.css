@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 90px 0;
+    margin: 150px 0 20px;
 }
 
 .servicesPageTitle {
@@ -15,6 +15,8 @@
     text-transform: uppercase;
     color: #27262D;
     padding: 120px 0;
+    border-bottom: 1px solid rgba(39, 38, 45, 0.15);
+    border-top: 1px solid rgba(39, 38, 45, 0.15);
 }
 
 .wrapperTitle {
@@ -33,7 +35,6 @@
     text-transform: uppercase;
     color: #27262D;
     margin: 40px 0 80px 0;
-
 }
 
 .cardDescriptionWrapper .description {
@@ -59,43 +60,40 @@
     color: #27262D;
     padding: 17px 0;
     border-bottom: 1px solid rgba(39, 38, 45, 0.15);
-
 }
 
-.cardDescriptionWrapper img {
-    margin-bottom: 170px;
-}
-
-.servicesPageItem .card img {
+.servicesPageItem .servCard img {
     position: absolute;
-    top: 60%;
-    left: 80%;
-    transform: translate(-50%, -50%);
+    bottom: 0;
+    right: 0;
 }
 
-.servicesPageItem .card {
+.servicesPageItem .servCard {
     position: relative;
+    margin: 130px 0 150px;
 }
 
 @media screen and (max-width: 1200px) {
     .cardDescriptionWrapper {
         width: 80%;
         order: 2;
-
+        margin: 0 auto;
     }
 
-    .servicesPageItem .card img {
+    .cardDescriptionWrapper .title {
+        margin: 0px 0 10px 0;
+    }
+
+    .servicesPageItem .servCard img {
         position: static;
         order: 1;
         width: 80px;
         transform: none;
-
     }
 
-    .cardDescriptionWrapper img {
-        margin-bottom: 40px;
+    .servicesPageItem .servCard {
+        margin: 50px 0 50px;
     }
-
 
     .cardDescriptionWrapper .description {
         padding-right: 25%;
@@ -107,6 +105,17 @@
         text-align: center;
     }
 
+    .servCard-img-1 {
+        width: 100px !important;
+    }
+
+    .servCard-img-2 {
+        width: 120px !important;
+    }
+
+    .servCard-img-3 {
+        width: 65px !important;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -116,6 +125,10 @@
 
     .servicesPageItem {
         margin: 30px 0;
+    }
+
+    .servicesPageTitle {
+        font-size: 56px;
     }
 }
 
@@ -146,10 +159,10 @@
 
 @media screen and (max-width: 400px) {
     .servicesPageTitle {
-        font-size: 58px;
+        font-size: 27px;
     }
 
-    .servicesPageItem .card img {
+    .servicesPageItem .servCard img {
         width: 60px;
     }
 
@@ -162,12 +175,32 @@
         line-height: 110%;
     }
 
-    .cardDescriptionWrapper img {
-        margin-bottom: 10px;
-    }
-
-    .card {
-
+    .servCard {
         margin-bottom: 30px;
     }
+}
+
+.servCard-img-0 {
+    right: 120px !important;
+    bottom: -70px !important;
+}
+
+.servCard-img-1 {
+    bottom: 70px !important;
+    right: -60px !important;
+}
+
+.servCard-img-2 {
+    right: -180px !important;
+    bottom: -70px !important;
+}
+
+.servCard-img-3 {
+    right: 190px !important;
+    bottom: 80px !important
+}
+
+.servCard-img-4 {
+    right: 130px !important;
+    bottom: 110px !important
 }

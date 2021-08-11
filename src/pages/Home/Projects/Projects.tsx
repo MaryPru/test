@@ -1,8 +1,12 @@
 import "../Projects/Projects.css"
-import pr1 from "../../../assets/img/pr1.png"
-import vector from "../../../assets/img/Vector.svg"
+import ArrowIcon from "../../../components/Icons/ArrowIcon";
+import ProjectItem from "./ProjectsItem/ProjectsItem";
 
 const Projects = () => {
+    const ProjectData =[
+        1,2,3,4
+    ]
+
     return (
         <div className="Projects">
             <div className="contentWrapper">
@@ -10,34 +14,14 @@ const Projects = () => {
                     Избранные проекты
                 </div>
                 <div className="ProjectsCards ">
-                    <div className="ProjectCard">
-                        <img src={pr1} alt="preview" />
-                        <div className="title">Название проекта</div>
-                        <div className="subTitle">Описание</div>
-                    </div>
-                    <div className="ProjectCard">
-                        <img src={pr1} alt="preview" />
-                        <div className="title">Название проекта</div>
-                        <div className="subTitle">Описание</div>
-                    </div>
-                    <div className="ProjectCard">
-                        <img src={pr1} alt="preview" />
-                        <div className="title">Название проекта</div>
-                        <div className="subTitle">Описание</div>
-                    </div>
-                    <div className="ProjectCard">
-                        <img src={pr1} alt="preview" />
-                        <div className="title">Название проекта</div>
-                        <div className="subTitle">Описание</div>
-                    </div>
+                    {ProjectData.map((el) => <ProjectItem key={`ProjectItem=${el}`}/>)}
                 </div>
                 <div className="ProjectsSubTitle">
                     <div className="text">Все проекты</div>
-                    <img src={vector} alt="vector" />
+                    <ArrowIcon/>
                 </div>
             </div>
         </div>
-
     );
 }
 

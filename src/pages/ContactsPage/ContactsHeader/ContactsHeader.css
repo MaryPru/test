@@ -17,14 +17,13 @@
     font-weight: 1000;
     font-size: 90px;
     line-height: 120%;
-    color: #27262D; 
+    color: #27262D;
     padding-right: 295px;
     text-transform: uppercase;
 }
 
 .ContactsHeaderAttributsWrapper {
     padding: 100px 0;
-  
 }
 
 .ContactsHeaderAttributTitle {
@@ -35,12 +34,13 @@
     line-height: 150%;
     color: #27262D;
 }
+
 .WrapperDescriptions:first-child {
-   margin-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 .WrapperDescriptions:last-child {
-   margin-top: 32px;
+    margin-top: 32px;
 }
 
 .ContactsHeaderAttributDescription {
@@ -50,20 +50,62 @@
     font-size: 24px;
     line-height: 150%;
     color: #27262D;
-
 }
-
 
 @media screen and (max-width: 1200px) {
     .contactsHeaderWrapper {
-    justify-content: center;
-    flex-direction: column;
+        justify-content: flex-start;
+        flex-direction: column;
     }
 
     .ContactsHeaderTitle {
-        padding-right: 60px;
+        font-size: 62px;
     }
+
+    .ContactsHeaderAttributsWrapper {
+        padding: 40px 0;
+        margin-right: 140px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .ContactsHeaderTitle {
+        font-size: 56px;
+        padding-right: 207px;
+    }
+
+    .ContactsHeaderAttributDescription {
+        font-size: 18px;
+        line-height: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ContactsHeaderTitle {
+        font-size: 42px;
+    }
+
+    .ContactsHeaderAttributDescription {
+        font-size: 16px;
+    }
+
+    .ContactsHeaderAttributsWrapper {
+        margin-right: 114px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .ContactsHeaderTitle {
+        font-size: 36px;
+        padding-right: 131px;
+    }
+
     .contactsHeaderWrapper {
-        margin-bottom: 0 ;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .ContactsHeaderAttributsWrapper {
+        margin-right: 0;
     }
 }
