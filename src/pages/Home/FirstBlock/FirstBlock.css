@@ -1,26 +1,34 @@
-.FirstBlock {
+.home-page-sub-title {
+    width: 600px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 120%;
+    color: #27262D;
+    padding: 100px 0 90px;
+}
+
+.text-logo {
+    padding: 120px 0;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: rgba(39, 38, 45, 0.15);
+}
+
+.home-page-show-real-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 200px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
 }
 
-.FirstBlockName img {
-    margin: 120px 0;
-}
-
-.FirstBlockName {
-    margin-bottom: 90px;
-    border-bottom: 1px solid #27262d26;
-}
-
-.FirstBlockHeader {
+.show-real-button {
     display: flex;
-    cursor: pointer;
-    align-items: center;
-}
-
-.FirstBlockSubTitle {
+    align-items:center;
     font-family: Inter;
     font-style: normal;
     font-weight: bold;
@@ -30,55 +38,25 @@
     text-transform: uppercase;
     margin-right: 10px;
     transition: 400ms;
+    cursor: pointer;
+    outline: none;
 }
+.show-real-button img {
 
-.FirstBlockHeader:hover .FirstBlockSubTitle {
-    margin-right: 30px;
+    transition: 400ms ease-in-out;
+    margin-left: 20px;
 }
-
-.FirstBlockGeneral {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;;
-}
-
-@media screen and (max-width: 1200px) {
-    .FirstBlock {
-        margin-bottom: 70px;
-    }
-
-    .FirstBlockGeneral {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .FirstBlockHeader {
-        margin-bottom: 30px;
-    }
-
-    .FirstBlockName img {
-        margin: 70px 10px;
-        width: 60%;
-    }
+.show-real-button:hover img{
+    margin-left: 50px;
 }
 
 @media screen and (max-width: 900px) {
-    .FirstBlock iframe {
-        display: block;
-        width: 400px;
-        height: 225px;
+    .home-page-sub-title {
+        padding: 140px 0 60px;
+        font-size: 22px;
     }
-}
-
-@media screen and (max-width: 600px) {
-    .FirstBlockName {
-        margin-bottom: 42px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .FirstBlockName img {
-        margin: 32px 41px;
+    .text-logo {
+        padding: 60px 0;
+        width: 70vw;
     }
 }

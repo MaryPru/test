@@ -1,6 +1,7 @@
 import "./Services.css"
 import vector from "../../../assets/img/Vector.svg"
 import ServicesDirection from "./ServicesDirection/ServicesDirection";
+import Strategy from "../../ServicesPage/ServicesPage/StrategyItem/Strategy/Strategy";
 
 const Services = () => {
 
@@ -17,9 +18,9 @@ const Services = () => {
                     </div>
                     <div className="ServicesDirectionsWrapper">
                         <div className="ServicesDirections">
-
                             {data.map((name) => (
                                 <ServicesDirection
+                                    key={`${name}`}
                                     name={name}
                                 />
                             ))}

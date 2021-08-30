@@ -188,15 +188,15 @@
     }
 
     .formInputs {
-        width: 80%;
+        width: calc(100% - 40px);
         margin: 0 auto;
     }
 }
 
 @media screen and (max-width: 900px) {
+
     .feedBackForm .title {
         font-size: 50px;
-
     }
 }
 

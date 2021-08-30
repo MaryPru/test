@@ -1,6 +1,5 @@
 .strategy {
     display: grid;
-    grid-template-columns: 680px 680px;
     align-items: center;
     border-bottom: 1px solid #27262d26;
     padding-bottom: 117px;
@@ -30,7 +29,8 @@
 
 @media screen and (max-width: 1200px) {
     .strategy {
-        grid-template-columns: 460px 460px;
+        display: grid;
+        grid-template-columns: minmax(1fr,200px) 2fr;
         padding-bottom: 60px;
         margin-bottom: 0;
     }
@@ -46,8 +46,10 @@
 
 @media screen and (max-width: 900px) {
     .strategy {
-        grid-template-columns: 350px 350px;
-        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+        padding-top: 50px;
     }
 
     .strategyTitle {
@@ -67,11 +69,7 @@
         margin-right: 0;
     }
 
-    .strategy {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 0px;
-        margin-bottom: 30px;
-        padding-top: 50px;
+    .strategyItem {
+        margin-bottom: 50px!important;
     }
 }

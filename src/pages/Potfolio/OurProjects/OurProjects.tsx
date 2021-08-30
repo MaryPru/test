@@ -2,6 +2,7 @@ import "../OurProjects/OurProjects.css"
 import CardProject from "./CardProject/CardProject"
 
 const OurProjects = () => {
+
     const OurProjectsData = [
         {
             title: "Название проекта в две строки",
@@ -40,6 +41,7 @@ const OurProjects = () => {
                 <div className="cardsWrapper">
                     {OurProjectsData.map((project, index) =>
                         <CardProject
+                            key={`${project.title}-${index}`}
                             oven={even(index)}
                             title={project.title}
                             subTitle={project.subTitle}

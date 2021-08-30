@@ -36,10 +36,11 @@
 }
 
 .ServicesDirection:hover img {
-    margin-left: 46px;
+    margin-right: 0;
 }
 
 .ServicesDirection .name {
+    width: 100%;
     font-family: InterBold;
     font-style: normal;
     font-weight: 900;
@@ -54,70 +55,37 @@
     transition: 400ms;
     width: 26px;
     height: 26px;
-    margin-left: 16px;
+    margin-right: 16px;
 }
 
-@media screen and (max-width: 1200px) {
-    .ServicesTitle {
-        text-align: center;
-        margin-top: 50px;
-    }
+@media screen and (max-width: 1300px) {
 
     .ServicesDescription {
-        padding: 40px 130px;
-    }
-
-    .ServicesDirections {
-        margin: 0 auto;
-        width: 80%;
-    }
-
-    .Services {
-        margin-bottom: 100px;
+        padding: 40px 0;
+        max-width: none;
     }
 }
+
 
 @media screen and (max-width: 900px) {
     .ServicesTitle {
-        font-size: 66px;
-        line-height: 72%;
-    }
-
-    .ServicesDirection .name {
-        font-size: 20px !important;
-        line-height: 23px !important;
+        font-size: 50px;
+        margin-top: 100px;
     }
 
     .ServicesDirection {
         padding: 20px 0;
     }
 
-    .ServicesDescription {
-        padding: 50px 109px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .ServicesDescription {
-        padding: 20px 11px;
-        font-size: 10px;
-    }
-
     .ServicesDirection .name {
-        font-size: 10px !important;
-        line-height: 12px !important;
+        font-size: 22px;
     }
 
     .ServicesDirection img {
-        width: 13px;
-        margin-left: 6px;
+        margin-right: 16px;
     }
 
     .Services {
-        margin-bottom: 40px;
-    }
-
-    .ServicesTitle {
-        font-size: 48px;
+        margin-bottom: 100px;
     }
 }

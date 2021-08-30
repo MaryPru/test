@@ -94,82 +94,132 @@
     color: #27262D;
 }
 
-@media screen and (max-width: 1200px) {
-
-    .cardsWrapper {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 0;
+@media screen and (max-width: 1400px) {
+    .ourProjects {
+        padding: 0 20px;
     }
 
     .cardProject img {
+        max-width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .cardsWrapper {
+        margin-bottom: 100px
+    }
+    .ourProjectTitle {
+        font-size: 60px;
+        text-align: center;
+        margin:110px 0 60px;
+    }
+    .wrapperDescription .title {
+        margin-top: 40px;
+    }
+    .cardProject .wrapperDescription:nth-child(odd) {
+        margin: 0;
+    }
+    .ourProjects {
+        padding: 0 20px;
+    }
+    .ourProjects .cardProject {
+        margin-bottom: 60px;
+    }
+    .cardProject img {
+        max-width: 100%;
         width: 100%;
-        height: auto;
+    }
+    .cardProject .wrapperDescription:nth-child(even) {
+        margin: 0;
+    }
+    .cardProject .wrapperDescription {
+        order: 2;
     }
 
     .cardProject {
         flex-direction: column;
         justify-content: center;
-        width: 80%;
-        margin-bottom: 70px;
+        width: calc(100% - 40px);
     }
 
-    .wrapperDescription .title {
-        font-size: 35px;
-        padding-top: 10px;
-    }
-
-    .ourProjectTitle {
-        text-align: center;
-        padding: 0px 80px;
-        margin: 80px auto 60px;
-    }
-
-    .cardProject .wrapperDescription {
-        order: 2;
-        padding: 0 80px;
-    }
-
-    .cardProject .wrapperDescription:nth-child(odd) {
-        margin-right: 0px;
-    }
-
-    .cardProject .wrapperDescription:nth-child(even) {
-        margin-left: 0px;
-    }
 }
 
-@media screen and (max-width: 900px) {
-    .ourProjectTitle {
-        font-size: 70px;
-    }
-}
+/*@media screen and (max-width: 1200px) {*/
 
-@media screen and (max-width: 600px) {
-    .ourProjectTitle {
-        font-size: 39px;
-    }
+/*    .cardsWrapper {*/
+/*        display: flex;*/
+/*        align-items: center;*/
+/*        flex-direction: column;*/
+/*        margin-bottom: 0;*/
+/*    }*/
 
-    .cardProject .wrapperDescription {
-        background-color: #14376f57;
-        padding: 30px 30px;
-    }
+    /*.cardProject img {*/
+    /*    width: 100%;*/
+    /*    height: auto;*/
+    /*}*/
 
-    .ourProjects .cardProject {
-        margin-bottom: 30px;
-    }
-}
+    /*.cardProject {*/
+    /*    flex-direction: column;*/
+    /*    justify-content: center;*/
+    /*    width: calc(100% - 40px);*/
+    /*    margin-bottom: 70px;*/
+    /*}*/
 
-@media screen and (max-width: 600px) {
-    ourProjectTitle {
-        padding: 0;
-        margin: 80px auto 29px;
-    }
-}
+/*    .wrapperDescription .title {*/
+/*        font-size: 35px;*/
+/*        padding-top: 10px;*/
+/*    }*/
 
-@media screen and (max-width: 400px) {
-    .ourProjectTitle {
-        font-size: 27px;
-    }
-}
+/*    .ourProjectTitle {*/
+/*        text-align: center;*/
+/*        padding: 0px 80px;*/
+/*        margin: 80px auto 60px;*/
+/*    }*/
+
+/*    .cardProject .wrapperDescription {*/
+/*        order: 2;*/
+/*        padding: 0 80px;*/
+/*    }*/
+
+/*    .cardProject .wrapperDescription:nth-child(odd) {*/
+/*        margin-right: 0px;*/
+/*    }*/
+
+/*    .cardProject .wrapperDescription:nth-child(even) {*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 900px) {*/
+/*    .ourProjectTitle {*/
+/*        font-size: 70px;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 600px) {*/
+/*    .ourProjectTitle {*/
+/*        font-size: 39px;*/
+/*    }*/
+
+/*    .cardProject .wrapperDescription {*/
+/*        padding: 30px 30px;*/
+/*    }*/
+
+/*    .ourProjects .cardProject {*/
+/*        margin-bottom: 30px;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 600px) {*/
+/*    ourProjectTitle {*/
+/*        padding: 0;*/
+/*        margin: 80px auto 29px;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 400px) {*/
+/*    .ourProjectTitle {*/
+/*        font-size: 27px;*/
+/*    }*/
+/*}*/

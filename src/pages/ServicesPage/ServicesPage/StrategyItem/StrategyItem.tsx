@@ -1,5 +1,5 @@
 import Strategy from "./Strategy/Strategy";
-import "./StrategyItem.css"
+import "./StrategyItem.css";
 import {useSelector} from "react-redux";
 
 interface StrategyProps {
@@ -9,20 +9,21 @@ interface StrategyProps {
 
 const StrategyItem = () => {
 
-    const StrategyData = useSelector((state: any) => state.servicesReducers)
+    const StrategyData = useSelector((state: any) => state.servicesReducers);
 
     return (
-    <div className="strategyItem">
-        <div className={"contentWrapper strategyWrapper"} >
-            {StrategyData.StrategyInfo.map((strategyItem:StrategyProps)=>(
-               <Strategy
-               title={strategyItem.title}
-               description={strategyItem.description}
-               />
-                )
-            )}
+        <div className="strategyItem">
+            <div className={"contentWrapper strategyWrapper"}>
+                {StrategyData.StrategyInfo.map((strategyItem: StrategyProps) => (
+                        <Strategy
+                            key={`${strategyItem.title}`}
+                            title={strategyItem.title}
+                            description={strategyItem.description}
+                        />
+                    ),
+                )}
+            </div>
         </div>
-    </div>
-    )
-}
+    );
+};
 export default StrategyItem;

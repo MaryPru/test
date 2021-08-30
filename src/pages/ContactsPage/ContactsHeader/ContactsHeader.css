@@ -54,6 +54,7 @@
 
 @media screen and (max-width: 1200px) {
     .contactsHeaderWrapper {
+        align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
     }
@@ -64,7 +65,6 @@
 
     .ContactsHeaderAttributsWrapper {
         padding: 40px 0;
-        margin-right: 140px;
     }
 }
 
@@ -80,7 +80,12 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    .contactsHeader {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+
     .ContactsHeaderTitle {
         font-size: 42px;
     }
@@ -94,10 +99,13 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+
+}
+
 @media screen and (max-width: 400px) {
     .ContactsHeaderTitle {
         font-size: 36px;
-        padding-right: 131px;
     }
 
     .contactsHeaderWrapper {

@@ -1,11 +1,11 @@
-import "../Projects/Projects.css"
+import "../Projects/Projects.css";
 import ArrowIcon from "../../../components/Icons/ArrowIcon";
 import ProjectItem from "./ProjectsItem/ProjectsItem";
 
 const Projects = () => {
-    const ProjectData =[
-        1,2,3,4
-    ]
+    const ProjectData = [
+        1, 2, 3, 4,
+    ];
 
     return (
         <div className="Projects">
@@ -23,6 +23,6 @@ const Projects = () => {
             </div>
         </div>
     );
-}
+};
 
 export default Projects;

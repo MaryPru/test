@@ -1,12 +1,15 @@
 import ServicesPageItem from "./ServicesPage/ServicesPageItem/ServicesPageItem"
 import FeedBackForm from "../../components/FeedBackForm/FeedBackForm"
 import StrategyItem from "./ServicesPage/StrategyItem/StrategyItem";
+import './ServicesPage.css'
 
 const ServicesPage = () => {
     return (
         <>
-            <ServicesPageItem />
-            <StrategyItem />
+            <div className={'wrapper-services'}>
+                <ServicesPageItem />
+                <StrategyItem />
+            </div>
             <FeedBackForm type={"black"} />
         </>
     );

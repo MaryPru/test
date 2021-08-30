@@ -1,4 +1,5 @@
 .footer {
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +75,7 @@
 
 @media screen and (max-width: 1200px) {
     .footer .contentWrapper {
-        width: 80%;
+        width: calc(100% - 40px);
     }
 
     .wrapperFooterBody {

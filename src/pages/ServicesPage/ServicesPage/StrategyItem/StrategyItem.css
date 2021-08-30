@@ -6,23 +6,3 @@
     margin: 0 auto;
     border-top: 1px solid rgba(39, 38, 45, 0.15);
 }
-
-@media screen and (max-width: 1200px) {
-    .strategyWrapper {
-        width: 80%;
-    }
-
-    .strategyItem {
-        margin-bottom: 100px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .strategyWrapper {
-        width: 70%;
-    }
-
-    .strategyItem {
-        margin-bottom: 100px;
-    }
-}

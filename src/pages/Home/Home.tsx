@@ -8,16 +8,12 @@ import FeedBackForm from "../../components/FeedBackForm/FeedBackForm"
 const HomePage = () => {
   return (
     <>
-      <div className="HomePage">
-        <div className="contentWrapper">
-          <div className="HomeTitle">Агенство digital-решений <br />
-            для бизнеса</div>
+        <div className={'home-page'}>
+            <FirstBlock />
+            <Projects />
+            <Services />
         </div>
-      </div>
-      <FirstBlock />
-      <Projects />
-      <Services />
-      <FeedBackForm type={"black"} />
+        <FeedBackForm type={"black"} />
     </>
   );
 }
